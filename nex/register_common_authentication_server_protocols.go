@@ -29,7 +29,7 @@ func registerCommonAuthenticationServerProtocols() {
 	secureStationURL.SetType(uint8(constants.StationURLFlagPublic))
 
 	commonTicketGrantingProtocol.SecureStationURL = secureStationURL
-	commonTicketGrantingProtocol.BuildName = types.NewString(serverBuildString)
+	commonTicketGrantingProtocol.BuildName = types.NewString("branch:trunk build:2_15_7221_0")
 	commonTicketGrantingProtocol.SecureServerAccount = globals.SecureServerAccount
 	commonTicketGrantingProtocol.SetPretendoValidation(globals.AESKey)
 }
