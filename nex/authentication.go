@@ -22,12 +22,12 @@ func StartAuthenticationServer() {
 
 	globals.AuthenticationServer.LibraryVersions.SetDefault(nex.NewLibraryVersion(2, 0, 0))
 	globals.AuthenticationServer.SetFragmentSize(900)
-	globals.AuthenticationServer.AccessKey = "80d4a456"
+	globals.AuthenticationServer.AccessKey = "2ef57176"
 
 	globals.AuthenticationEndpoint.OnData(func(packet nex.PacketInterface) {
 		request := packet.RMCMessage()
 
-		fmt.Println("=== F1 2011 - Auth ===")
+		fmt.Println("=== Tetris: Axis - Auth ===")
 		fmt.Printf("Protocol ID: %#v\n", request.ProtocolID)
 		fmt.Printf("Method ID: %#v\n", request.MethodID)
 		fmt.Println("================================")

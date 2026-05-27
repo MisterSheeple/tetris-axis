@@ -21,12 +21,12 @@ func StartSecureServer() {
 
 	globals.SecureServer.LibraryVersions.SetDefault(nex.NewLibraryVersion(2, 0, 0))
 	globals.SecureServer.SetFragmentSize(900)
-	globals.SecureServer.AccessKey = "80d4a456"
+	globals.SecureServer.AccessKey = "2ef57176"
 
 	globals.SecureEndpoint.OnData(func(packet nex.PacketInterface) {
 		request := packet.RMCMessage()
 
-		fmt.Println("=== F1 2011 - Secure ===")
+		fmt.Println("=== Tetris: Axis - Secure ===")
 		fmt.Printf("Protocol ID: %#v\n", request.ProtocolID)
 		fmt.Printf("Method ID: %#v\n", request.MethodID)
 		fmt.Println("==================================")
